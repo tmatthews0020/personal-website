@@ -1,0 +1,17 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Todd Matthews - Senior Software Developer'
+
+[params]
+  description = 'Senior Software Developer with 7+ years experience in microservice architectures, full-stack development, and cloud-native solutions. Specializing in Node.js, Angular, Kubernetes, and .NET at SS&C Technologies.'
+
+[build]
+  writeStats = false
+
+[server]
+  [[server.headers]]
+    for = '/**'
+    [server.headers.values]
+      X-Frame-Options = 'DENY'
+      X-Content-Type-Options = 'nosniff'
+      Referrer-Policy = 'strict-origin-when-cross-origin'

@@ -1,7 +1,9 @@
-# build output
-dist/
-# generated types
-.astro/
+./dist
+
+# Hugo generated files
+public/
+resources/
+.hugo_build.lock
 
 # dependencies
 node_modules/
