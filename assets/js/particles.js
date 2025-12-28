@@ -65,7 +65,7 @@ class ParticleSystem {
 					const opacity = (1 - distance / this.maxDistance) * 0.3;
 					this.ctx.beginPath();
 					this.ctx.strokeStyle = `rgba(16, 185, 129, ${opacity})`;
-					this.ctx.lineWidth = 1;
+					this.ctx.lineWidth = 2;
 					this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
 					this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
 					this.ctx.stroke();
